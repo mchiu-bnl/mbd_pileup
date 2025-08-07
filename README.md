@@ -7,14 +7,13 @@ The models used and their original source code if it exists are
 Autogluon (using a variety of models:  
 
 ## Directions
-First, go to Kaggle to download the [dataset](https://www.kaggle.com/competitions/march-machine-learning-mania-2024/data).
-Either save this in a directory named <code>/data/march-madness</code> or edit <code>data-processing.py</code> and <code>model.py</code> to reflect the data directory.
-
 You will likely have to install all the dependencies below.  Autogluon only works with certain versions of python, with python 3.12 being the most recent supported (as of 8/7/25).  Note that you may have to modify your PYTHONPATH so that it is not pointing to modules from a different version of python.
 
 It's always recommended to use virtual environments, [venv](https://docs.python.org/3/tutorial/venv.html).  A recent better alternative is to use [UV](https://docs.astral.sh/uv/).
 
-Once you have installed all the dependencies, then you test it with
+Once you have installed all the dependencies, then you will need the training and test data (csv format).  They are too large for git.
+
+Once you have the training data, test the training code with
 
 <code>python run_autogluon.py</code>
 
